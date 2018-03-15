@@ -1,7 +1,7 @@
 # If you add religions, and use those tags, do not change them without changing everywhere they are used.
 
 # Uses all 'modifiers' possible thats exported as a Modifier.
-elven = {
+fantasy = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
 
@@ -11,14 +11,14 @@ elven = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 120 }
 	
-  high_elf = {
+  elven = {
  		color = { 78 165 46 }
 		icon = 6
 
 		country = {
 			tolerance_own = 1
-			tolerance_heretic = -1
-			trade_efficiency = 0.50
+			tolerance_heretic = 0
+			trade_efficiency = 0.05
 		}
 		
 		country_as_secondary = {

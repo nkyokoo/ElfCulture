@@ -18,4 +18,4 @@ check releases tab
 
 
 ## using the mod
-This culture won't appear in the game by naturally since there's no existing countries using it, the only way to use it to make a custom nation.
+This culture won't appear in the game by natural since there's no existing countries using it, the only way to use it is to make a custom nation.
