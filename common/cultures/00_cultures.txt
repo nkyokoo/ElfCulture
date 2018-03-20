@@ -8,7 +8,7 @@
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
 elven = {
 		elf = {
-		primary = eleven
+		primary = elf
 		male_names = {
 			Hagas Seiveril Filarion Ruehar Rudolf Ayre Orrian Vesperr Oslarelar Pyrravym Keryth Illitran 
 			Nym Ailmar Vulen Tordynnar Ehlark Anlyth Rennyn Vulmer Huquethae Maximilian Hastos Delmuth 
