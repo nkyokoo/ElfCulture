@@ -31,15 +31,6 @@ fantasy = {
 		on_convert = {
 			change_religion = elven
 			add_prestige = -100
-			
-			remove_country_modifier = the_test_act
-			remove_country_modifier = superintendent_office
-			remove_country_modifier = the_popery_act
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}			
 		
 		}
 	}
@@ -55,7 +46,7 @@ christian = {
 	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
 	# Can be overridden per religion.
 	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 57 
+	flag_emblem_index_range = { 1 57 }
 
 	
 	
@@ -92,7 +83,6 @@ christian = {
 			}			
 		
 		}
-	
 		
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI HUSSITE LOLLARD SOCINIAN }
 		
@@ -270,6 +260,38 @@ christian = {
 		}
 	}
 
+	anglican = {
+		color = { 135 77 255 }
+		icon = 28
+
+		allowed_center_conversion = {
+			catholic
+		}
+		country = {
+			development_cost = -0.1
+			innovativeness_gain = 0.5
+		}
+		
+		country_as_secondary = {
+			idea_cost = -0.1
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			divorce_consort_aspect
+			gain_consort_aspect
+			dissolve_monasteries_aspect
+			monopoly_aspect
+			stability_aspect
+		}
+		aspects_name = ANGLICAN_ASPECTS
+		
+		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
+		
+		date = 1534.11.3 # act of supremacy
+	}
+	
 	protestant = {
 		color = { 0 0 178 }
 		icon = 2
@@ -305,6 +327,7 @@ christian = {
 			allow_usury_aspect
 			translated_bibles_aspect
 		}
+		aspects_name = PROTESTANT_ASPECTS
 		
 		hre_heretic_religion = yes
 		
@@ -428,7 +451,7 @@ christian = {
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
-					RELIGION = protestant
+					RELIGION = reformed
 				}
 			}
 		}
@@ -461,7 +484,7 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
-								RELIGION = protestant
+								RELIGION = reformed
 							}
 						}
 						change_religion = reformed
@@ -488,7 +511,7 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
-								RELIGION = protestant
+								RELIGION = reformed
 							}
 						}
 						change_religion = reformed
@@ -998,9 +1021,6 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
-		allowed_conversion = {
-			sikhism
-		}
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0

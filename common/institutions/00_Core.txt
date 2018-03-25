@@ -274,24 +274,16 @@ feudalism = {
 National_Mage_College = {
 	penalty = 0.5
 	bonus = {
-		free_leader_pool = 1
+		free_leader_pool = 5
 	}
 
 
 	history = {
+			
+		AND = {
 				is_year = 1630
 				culture = elf
-				owner = {
-					
-					NOT = { government = siberian_native_council }
-					NOT = { government = steppe_horde }
-					#NOT = { government = tribal_despotism }
-					#NOT = { government = tribal_federation }
-					#NOT = { government = tribal_democracy }
-					#NOT = { government = native_council }
-					#NOT = { government = tribal_kingdom }
-				}
-		
+			}
 	
 		}
 	
@@ -312,7 +304,7 @@ National_Mage_College = {
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
 				any_friendly_coast_border_province = {
-						yearly_army_professionalism = 0.1
+						
 				}
 			}
 		}
@@ -343,7 +335,7 @@ National_Mage_College = {
 			}
 		}
 	}
-}
+
 
 #######################################
 # Renaissance
