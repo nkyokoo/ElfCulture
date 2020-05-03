@@ -7,15 +7,31 @@
 # graphical_culture = westerngfx
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
 elven = {
-		elf = {
-		primary = elf
+		wood_elf = {
+		primary = wood_elf
 		male_names = {
-			Hagas Seiveril Filarion Ruehar Rudolf Ayre Orrian Vesperr Oslarelar Pyrravym Keryth Illitran 
-			Nym Ailmar Vulen Tordynnar Ehlark Anlyth Rennyn Vulmer Huquethae Maximilian Hastos Delmuth 
-			Rathiain Ryfon Miirphys Usunaar Nelaeryn Ehrendil Halflar Eroan Jannalor Khuumal Sontar Goll     
-			Orist Luirlan Jharym Khatar Ruven Taerntym Sinaht Llewellenar Jharym Arun Luirlan Athtar Zaltarish 
-			Zhoron Fenian Druindar Theodwin Ailmon Cluhurach Sharian Virion Llombaerth Glorandal Arathorn Marlevaur
-			Marlevaur Marlevaur Reluraun Wyrran Hatharal Lhoris Andrathath Hatharal Saleh Cheyrth Ascal                
+			Thadae		
+			Thadioth  
+			Scalvi		
+			Caltus		
+			Gorgis			
+			Algoca			
+			Tridiocan		
+			Zaartalcat
+			Trizkartat		
+			Korgothi
+			Khioloth
+			Scoka
+			Tacoth
+			Kasca
+			Tharan
+			Osrakan
+			Thudolko
+			Dhosrothaeth
+			Garothioc
+			Cadriolci
+			
+
 		
 		}
 		female_names = { 
